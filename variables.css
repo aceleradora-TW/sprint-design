@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+:root {
+  --font-primary-text: 'Open Sans', sans-serif;
+  --font-title: 'Quicksand', sans-serif;
+  --font-subtitle: 'Quicksand', sans-serif;
+  --primary-color: #C82229;
+  --primary-dark-color: #8e161b;
+  --primary-color-2: #93BAD6;
+}

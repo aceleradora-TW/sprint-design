@@ -1,0 +1,55 @@
+.primaryText {
+  font-family: var(--font-primary-text);
+  font-size: 1em;
+}
+.title {
+  font-family: var(--font-title);
+  font-weight: bold;
+  font-size: 2em;
+}
+.subtitle {
+  font-family: var(--font-subtitle);
+  font-weight: bolder;
+  font-size: 1.3em;
+  color: var(--red);
+}
+.searchInput {
+  background: #FFF;
+  border: 1px solid #CCC;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgb(204, 204, 204);
+  padding-left: 12px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 20%;
+  font-family: var(--font-subtitle);
+  font-size: 1em;
+}
+.colorExemple {
+  margin-top: 5%;
+  height: 10vh;
+  color: white;
+}
+.color1{
+  background-color: var(--primary-color);
+}
+.color2{
+  background-color: var(--primary-color-2);
+}
+
+.prescricaoTable {   font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.prescricaoTable td, th {
+    border: 1px /*solid #dddddd*/;
+    text-align: left;
+    padding: 8px;
+}
+
+.prescricaoTable tr:nth-child(even) {
+    background-color: #dddddd; 
+}
