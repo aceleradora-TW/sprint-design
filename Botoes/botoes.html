@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BOTOES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <input type="submit" value="Voltar" class="sair"> <br>
+    <input type="submit" value="Sair" class="sair"> <br><br>
+    <input type="submit" value="Editar" class="editar"> <br><br>
+    <input type="submit" value="Salvar" class="salvar"> <br><br>
+    <input type="submit" value="Enviar" class="enviar"> <br>
+    <div class="a">
+      <span class="editarIcone"> <i class="fa fa-print"> </i> </span> <br><br>
+    </div>
+    <span class="editarIcone"> <i class="fa fa-edit"> </i> </span> <br><br>
+
+    <form action="#">
+        <p>
+          <input type="checkbox" id="test1" />
+          <label for="test1">1</label>
+        </p>
+        <p>
+          <input type="checkbox" id="test2" checked="checked" />
+          <label for="test2">2</label>
+        </p>
+          <p>
+            <input type="checkbox" id="test4" disabled="disabled" />
+            <label for="test4">3</label>
+        </p>
+    </form>
+
+    <style>
+      .a{
+        margin-top: -44px;
+        margin-left: 140px;
+      }
+      body{
+        background-color: #D9EAFF;
+      }
+
+      .sair{
+        height: 40px;
+        text-align: center;
+        width: 130px;
+        background: none;
+        border: none;
+        color: black;
+        letter-spacing:1px;
+        text-shadow:0;
+        font-size:12px;
+        font-weight:bold;
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      .sair:hover{
+        color: #e74c3c;
+      }
+      input{
+        outline:none;
+        height: 40px;
+        text-align: center;
+        width: 130px;
+        border-radius:40px;
+        letter-spacing:1px;
+        text-shadow:0;
+        font-size:12px;
+        font-weight:bold;
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      .editar{
+        color: #0984e3;
+        background-color: #fff;
+        border: 2px solid #0984e3;
+      }
+      .editar:hover{
+        color: white;
+        background-color: #0984e3;
+        border: 2px solid #74b9ff;
+      }
+
+      .salvar{
+        color: #00b894;
+        background-color: #fff;
+        border: 2px solid #00b894;
+      }
+      .salvar:hover{
+        color: white;
+        background-color: #00b894;
+        border: 2px solid #55efc4;
+      }
+
+      .enviar{
+        color: #c23616;
+        background-color: #fff;
+        border: 2px solid #c23616;
+      }
+      .enviar:hover{
+        color: white;
+        background-color: #c23616;
+        border: 2px solid #e84118;
+      }
+
+      .editarIcone{
+        cursor: pointer;
+        font-size: 40px;
+        background: none;
+        padding: 3px;
+      }
+      .editarIcone:hover{
+        color: #636e72;
+      }
+
+      /* Base for label styling */
+      [type="checkbox"]:not(:checked),
+      [type="checkbox"]:checked {
+        position: absolute;
+        left: -9999px;
+      }
+      [type="checkbox"]:not(:checked) + label,
+      [type="checkbox"]:checked + label {
+        position: relative;
+        padding-left: 1.95em;
+        cursor: pointer;
+      }
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.25em; height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: .2em; left: .275em;
+  font-size: 1.4em;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all .2s;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #4778d9!important;
+}
+
+
+
+
+
+
+/* Useless styles, just for demo design */
+
+form {
+  width: 7em;
+  margin: 0 auto;
+}
+.txtcenter {
+  margin-top: 4em;
+  font-size: .9em;
+  text-align: center;
+  color: #aaa;
+}
+.copy {
+ margin-top: 2em;
+}
+.copy a {
+ text-decoration: none;
+ color: #4778d9;
+}
+
+
+
+
+
+
+
+
+
+    </style>
+  </body>
+</html>
